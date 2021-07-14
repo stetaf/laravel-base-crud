@@ -19,7 +19,7 @@ class CreateComicTable extends Migration
             $table->string('serie');
             $table->string('category')->nullable();
             $table->float('price', 3, 2);
-            $table->string('release_date')->nullable();
+            $table->date('release_date')->nullable();
             $table->bigInteger('isbn');            
             $table->string('poster');
             $table->timestamps();
