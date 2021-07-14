@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Comic;
 
 class PageController extends Controller
 {   
@@ -12,6 +13,9 @@ class PageController extends Controller
     * @return \Illuminate\Http\Response
     */
     public function index() {
-        return view('home');
+        $comics = Comic::all();
+        $total = count($comics);
+
+        return view('home', compact('total'));
     }
 }
