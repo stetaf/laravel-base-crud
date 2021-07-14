@@ -13,16 +13,28 @@ main {
         flex-wrap: wrap;
 
         .card { 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             width: calc(100% / 4 - 10px);
             padding: 0px 5px;
             margin: 5px;
+
+            img { 
+                height: 350px;
+            }
     
             a {
                 color: white !important;
-                background: #161616;
                 border: 0;
                 width: 100px;
-                margin: 10px auto;
+                margin: 20px auto;
+            }
+
+            div { 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
         }
     }
@@ -51,11 +63,20 @@ main {
                 margin-top: 50px;
 
                 .btn {
-                    color: white !important;
-                    background: #161616;
                     margin-top: 15px;
                 }
             }
         }       
+    }
+
+    .add { 
+        display: flex;
+        justify-content: center;
+        a {
+            margin: 15px 0;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: white !important;
+        }
     }
 }
