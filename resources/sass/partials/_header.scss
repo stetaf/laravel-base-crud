@@ -5,5 +5,16 @@ header {
         padding: 25px 0;
         color: white;
         font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .links { 
+            ul { list-style: none; }
+            li { 
+                display: inline-block; 
+                margin-left: 15px;
+            }
+        }
     }
 }
