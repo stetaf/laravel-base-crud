@@ -14,6 +14,12 @@ a {
   text-decoration: none !important;
 }
 
+.btn {
+  color: white !important;
+  background: #161616 !important;
+  border: unset !important;
+}
+
 header {
   background: #161616;
 }
@@ -49,16 +55,26 @@ main .cards {
   flex-wrap: wrap;
 }
 main .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: calc(100% / 4 - 10px);
   padding: 0px 5px;
   margin: 5px;
 }
+main .cards .card img {
+  height: 350px;
+}
 main .cards .card a {
   color: white !important;
-  background: #161616;
   border: 0;
   width: 100px;
-  margin: 10px auto;
+  margin: 20px auto;
+}
+main .cards .card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 main .cards::after {
   content: "";
@@ -84,7 +100,15 @@ main .comic .info .buy {
   margin-top: 50px;
 }
 main .comic .info .buy .btn {
-  color: white !important;
-  background: #161616;
   margin-top: 15px;
+}
+main .add {
+  display: flex;
+  justify-content: center;
+}
+main .add a {
+  margin: 15px 0;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white !important;
 }
