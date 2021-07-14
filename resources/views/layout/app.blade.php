@@ -13,9 +13,7 @@
     </head>
     <body>
         <!-- Header -->
-        <header>
-            <h1>Comics</h1>
-        </header>
+        @include('layout.partials.header')
         <!-- /Header -->
         
         <!-- Main -->
