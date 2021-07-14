@@ -9,10 +9,10 @@
                     <a href="{{ route('home') }}">Home</a>
                 </li>
                 <li>
-                    <a href="{{ route('comics.index') }}">Comics</a>
+                    <a href="{{ route('comics.index') }}">Comics list</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="{{ route('comics.create') }}">Add comic</a>
                 </li>
             </ul>
         </div>
