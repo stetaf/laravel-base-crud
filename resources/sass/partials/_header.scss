@@ -10,7 +10,10 @@ header {
         align-items: center;
 
         .links { 
-            ul { list-style: none; }
+            ul { 
+                list-style: none; 
+                margin-bottom: 0;
+            }
             li { 
                 display: inline-block; 
                 margin-left: 15px;
