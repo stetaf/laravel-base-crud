@@ -28,6 +28,13 @@
                         <a href="#" class="btn btn-secondary">Buy now</a>
                     </span>
                 </div>
+                <div class="delete">
+                    <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button class="btn btn-danger" title="Delete">Delete</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
