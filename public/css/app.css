@@ -18,6 +18,11 @@ a {
   color: white !important;
   background: #161616 !important;
   border: unset !important;
+  font-size: 18px !important;
+}
+
+.btn-danger {
+  background: #7c0b22 !important;
 }
 
 header {
@@ -101,6 +106,10 @@ main .comic .info .buy {
 }
 main .comic .info .buy .btn {
   margin-top: 15px;
+}
+main .comic .info .btn {
+  width: 100px;
+  margin-bottom: 15px;
 }
 main .add {
   display: flex;
