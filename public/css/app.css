@@ -64,3 +64,27 @@ main .cards::after {
   content: "";
   flex: auto;
 }
+main .comic {
+  display: flex;
+  justify-content: space-around;
+}
+main .comic .card {
+  width: 300px;
+}
+main .comic span, main .comic a {
+  font-size: 18px;
+}
+main .comic .info {
+  display: flex;
+  flex-direction: column;
+}
+main .comic .info .buy {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+main .comic .info .buy .btn {
+  color: white !important;
+  background: #161616;
+  margin-top: 15px;
+}

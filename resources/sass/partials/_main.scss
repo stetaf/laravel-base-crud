@@ -30,4 +30,32 @@ main {
         content: "";
         flex: auto;
     }
+
+    .comic {
+        display: flex;
+        justify-content: space-around;
+
+        .card {
+            width: 300px;
+        }
+
+        span, a { font-size: 18px; }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+
+            .buy {
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+
+                .btn {
+                    color: white !important;
+                    background: #161616;
+                    margin-top: 15px;
+                }
+            }
+        }       
+    }
 }
