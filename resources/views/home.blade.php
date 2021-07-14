@@ -1,5 +1,5 @@
 @extends('layout.app')
 
 @section('content')
-    @include('comics.index')
+    <h1>Home</h1>
 @endsection
