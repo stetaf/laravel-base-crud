@@ -1,9 +1,15 @@
 @extends('layout.app')
 
 @section('content')
-
-    @foreach ($comics as $comic)
-        <h3>{{ $comic->name }}</h3>
-    @endforeach
-
+    <div class="container">
+        <div class="cards">
+            @foreach ($comics as $comic)
+            <div class="card">
+                <h4>{{ $comic->name }}</h4>
+                <img src="{{ $comic->poster }}" alt="">
+                <a name="comic" id="comic" class="btn btn-primary" href="#" role="button">View</a>
+            </div>
+            @endforeach
+        </div>
+    </div>
 @endsection
