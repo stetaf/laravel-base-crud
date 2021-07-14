@@ -13,7 +13,9 @@
     </head>
     <body>
         <!-- Header -->
-        @include('layout.partials.header')
+        <header>
+            @include('layout.partials.header')
+        </header>
         <!-- /Header -->
         
         <!-- Main -->
