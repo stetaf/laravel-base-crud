@@ -53,35 +53,51 @@ class ComicController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  Comic  $comic
      * @return \Illuminate\Http\Response
      */
     public function show(Comic $comic)
     {
-        return view("comics.show", compact("comic"));
+        return view('comics.show', compact('comic'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Comic $comic)
     {
-        //
+        return view('comics.edit', compact('comic'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Comic $comic)
     {
-        //
+        $request->validate([
+            'name'  => 'required',
+            'serie' => 'required',
+            'price' => 'required',
+            'isbn'  => 'required'
+        ]);
+        
+        $comic->name = $request['name'];
+        $comic->serie = $request['serie'];
+        $comic->category = $request['category'];
+        $comic->price = $request['price'];
+        $comic->release_date = $request['release_date'];
+        $comic->isbn = $request['isbn'];
+        $comic->poster = $request['poster'];
+        $comic->update();
+
+        return redirect(route('comics.index'));
     }
 
     /**
