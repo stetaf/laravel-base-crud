@@ -28,12 +28,18 @@
                         <a href="#" class="btn btn-secondary">Buy now</a>
                     </span>
                 </div>
+                <hr>
+                <small style="display:block">Admin stuff</small>
+                <div class="edit">
+                    <form action="{{ route('comics.edit', $comic->id) }}" method="GET">
+                        @csrf
+                        <button class="btn btn-secondary" title="Edit">Edit</button>
+                    </form>
+                </div>
                 <div class="delete">
                     <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <hr>
-                        <small style="display:block">Admin stuff</small>
                         <button class="btn btn-danger" title="Delete" onclick="return confirm('Are you sure ?');">Delete</button>
                     </form>
                 </div>
