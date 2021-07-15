@@ -38,7 +38,11 @@
                 </div>
                 <div class="delete">
                     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#del">Delete</button>
-                    <!-- Delete confirmation modal -->
+                    <!-- 
+                        Use bootstrap to ask delete confirmation.
+                        Alternatively, we could use onclick attribute on the button with a confirm popup:
+                        <button class="btn btn-danger" title="Delete" onclick="return confirm('Are you sure ?');">Delete</button>
+                     -->
                     <div class="modal fade" id="del" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
