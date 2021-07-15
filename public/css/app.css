@@ -125,3 +125,10 @@ main .add a {
   font-size: 20px;
   color: white !important;
 }
+main .img-preview .preview {
+  display: block;
+  width: 100px;
+}
+main .img-preview small {
+  margin-bottom: 10px;
+}
