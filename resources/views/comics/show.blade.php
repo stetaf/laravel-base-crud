@@ -15,7 +15,7 @@
                     <b>Category: </b>{{ $comic->category}}
                 </span>
                 <span>
-                    <b>Release date: </b>{{ $comic->realease_date}}
+                    <b>Release date: </b>{{ $comic->release_date}}
                 </span>
                 <span>
                     <b>ISBN: </b>{{ $comic->isbn}}
