@@ -115,6 +115,9 @@ main .comic .info .btn {
   width: 100px;
   margin-bottom: 15px;
 }
+main .comic .modal-footer {
+  align-items: flex-start;
+}
 main .add {
   display: flex;
   justify-content: center;

@@ -71,7 +71,8 @@ main {
                 width: 100px;
                 margin-bottom: 15px;
             }
-        }       
+        }    
+        .modal-footer { align-items: flex-start; }   
     }
 
     .add { 
