@@ -43,11 +43,11 @@
                         Alternatively, we could use onclick attribute on the button with a confirm popup:
                         <button class="btn btn-danger" title="Delete" onclick="return confirm('Are you sure ?');">Delete</button>
                      -->
-                    <div class="modal fade" id="del" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="del" tabindex="-1" role="dialog" aria-labelledby="modal_label" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                                <h5 class="modal-title" id="modal_label">Warning</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                                 </button>
