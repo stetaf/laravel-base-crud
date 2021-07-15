@@ -1,0 +1,95 @@
+main {
+    padding: 25px 0;
+
+    h1 { 
+        margin-bottom: 20px;
+    }
+
+    .num { color: red; }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card { 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: calc(100% / 4 - 10px);
+            padding: 0px 5px;
+            margin: 5px;
+
+            img { 
+                height: 350px;
+            }
+    
+            a {
+                color: white !important;
+                border: 0;
+                width: 100px;
+                margin: 20px auto;
+            }
+
+            div { 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+    .cards::after {
+        content: "";
+        flex: auto;
+    }
+
+    .comic {
+        display: flex;
+        justify-content: space-around;
+
+        .card {
+            width: 300px;
+        }
+
+        span, a { font-size: 18px; }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+
+            .buy {
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+
+                .btn {
+                    margin-top: 15px;
+                }
+            }
+
+            .btn { 
+                width: 100px;
+                margin-bottom: 15px;
+            }
+        }       
+    }
+
+    .add { 
+        display: flex;
+        justify-content: center;
+        a {
+            margin: 15px 0;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: white !important;
+        }
+    }
+
+    .img-preview {
+        .preview { 
+            display: block;
+            width: 100px; 
+        }
+        small { margin-bottom: 10px; }
+    }
+}

@@ -1,0 +1,23 @@
+header { 
+    background: #161616;
+
+    nav { 
+        padding: 25px 0;
+        color: white;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .links { 
+            ul { 
+                list-style: none; 
+                margin-bottom: 0;
+            }
+            li { 
+                display: inline-block; 
+                margin-left: 15px;
+            }
+        }
+    }
+}

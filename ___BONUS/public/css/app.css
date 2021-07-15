@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, main {
+  padding-left: calc(100vw - 100%) !important;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+a {
+  color: unset !important;
+  text-decoration: none !important;
+}
+
+.btn {
+  color: white !important;
+  background: #161616 !important;
+  border: unset !important;
+  font-size: 18px !important;
+}
+
+.btn-danger {
+  background: #7c0b22 !important;
+}
+
+header {
+  background: #161616;
+}
+header nav {
+  padding: 25px 0;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .links ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+header nav .links li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+main {
+  padding: 25px 0;
+}
+main h1 {
+  margin-bottom: 20px;
+}
+main .num {
+  color: red;
+}
+main .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% / 4 - 10px);
+  padding: 0px 5px;
+  margin: 5px;
+}
+main .cards .card img {
+  height: 350px;
+}
+main .cards .card a {
+  color: white !important;
+  border: 0;
+  width: 100px;
+  margin: 20px auto;
+}
+main .cards .card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .cards::after {
+  content: "";
+  flex: auto;
+}
+main .comic {
+  display: flex;
+  justify-content: space-around;
+}
+main .comic .card {
+  width: 300px;
+}
+main .comic span, main .comic a {
+  font-size: 18px;
+}
+main .comic .info {
+  display: flex;
+  flex-direction: column;
+}
+main .comic .info .buy {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+main .comic .info .buy .btn {
+  margin-top: 15px;
+}
+main .comic .info .btn {
+  width: 100px;
+  margin-bottom: 15px;
+}
+main .add {
+  display: flex;
+  justify-content: center;
+}
+main .add a {
+  margin: 15px 0;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white !important;
+}
+main .img-preview .preview {
+  display: block;
+  width: 100px;
+}
+main .img-preview small {
+  margin-bottom: 10px;
+}
